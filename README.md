@@ -4,14 +4,14 @@
 
 ## Overview
 
-Oculis is an iOS app designed to assist the visually impaired by identifying buses and their numbers in real-time. Using YOLO-based object detection and OCR, the app detects buses, reads bus numbers, and provides audio announcements.
+Oculis is an iOS app designed to assist the visually impaired by identifying buses and their numbers in real-time. Using YOLO-based object detection, the app detects buses, reads bus numbers, and provides audio announcements.
 
 **Why it matters:** In Singapore, 3 to 7 out of every 1,000 people are blind, with most affected individuals over 50. Existing navigation apps lack last-mile support, are costly, and aren’t optimized for Singapore’s transport system.
 
 ## Key Features
 
 - **Real-Time Bus Detection**: Uses YOLO11n for accurate and efficient object detection.
-- **Bus Number Recognition**: OCR scans and identifies bus numbers.
+- **Bus Number Recognition**: A second YOLO model scans for each number seperately which is then stitched together during post processing
 - **Audio Announcements**: Provides real-time voice feedback.
 - **Optimized for Singapore**: Fine-tuned on local data for better accuracy.
 - **Lightweight & Fast**: Runs entirely on-device without an internet connection.
