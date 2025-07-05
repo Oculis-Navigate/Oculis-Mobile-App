@@ -19,15 +19,11 @@ Oculis is an iOS app designed to assist the visually impaired by identifying bus
 ## How It Works
 
 1. **Detect**: The YOLO11n model identifies buses in the camera feed.
-2. **Recognize**: OCR scans for bus numbers.
-3. **Filter**: Prioritizes numbers based on size, position, and context.
-4. **Confirm**: Uses a confidence system to verify results.
-5. **Notify**: Announces the confirmed bus number via speech synthesis.
+2. **Recognize**: A second YOLO11n model recognises each number separately.
+3. **Stitch**: The detected numbers are then stitched together to form the bus service number.
+4. **Notify**: Announces the confirmed bus number via speech synthesis.
 
 ## Technical Implementation
-
-- **Vision Framework**: Apple’s OCR technology
-- **Core ML**: On-device object detection
 - **AVFoundation**: Handles camera and speech synthesis
 - **Model Optimization**: Distilled for mobile efficiency
 
