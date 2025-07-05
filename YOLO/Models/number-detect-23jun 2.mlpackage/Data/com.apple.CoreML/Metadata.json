@@ -1,0 +1,19 @@
+{
+  "MLModelVersionStringKey" : "8.3.154",
+  "MLModelDescriptionKey" : "Ultralytics YOLO11n model trained on number_data.yaml",
+  "MLModelCreatorDefinedKey" : {
+    "stride" : "32",
+    "IoU threshold" : "0.7",
+    "Confidence threshold" : "0.25",
+    "channels" : "3",
+    "task" : "detect",
+    "docs" : "https:\/\/docs.ultralytics.com",
+    "date" : "2025-06-24T14:48:53.036284",
+    "imgsz" : "[640, 640]",
+    "args" : "{'batch': 1, 'half': False, 'int8': True, 'nms': True}",
+    "batch" : "1",
+    "names" : "{0: '0', 1: '1', 2: '2', 3: '3', 4: '4', 5: '5', 6: '6', 7: '7', 8: '8', 9: '9', 10: 'A', 11: 'E', 12: 'e', 13: 'G', 14: 'M', 15: 'W', 16: 'Bus'}"
+  },
+  "MLModelAuthorKey" : "Ultralytics",
+  "MLModelLicenseKey" : "AGPL-3.0 License (https:\/\/ultralytics.com\/license)"
+}
